@@ -9,16 +9,16 @@ const useIntersection = (element) => {
     };
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setState(entry.isIntersecting);
+        setState(entry.isIntersecting)
       },options
     );
 
-    element.current && observer.observe(element.current);
+    element.current && observer.observe(element.current)
 
-    return () => observer.unobserve(element.current);
-  }, []);
+    return () => observer.unobserve(element.current)
+  }, [])
 
-  return isVisible;
+  return isVisible
 };
 
 export default useIntersection;

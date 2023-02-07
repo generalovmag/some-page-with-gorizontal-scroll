@@ -19,15 +19,15 @@ function App() {
 
   useEffect(() => {
     if (inViewport) {
-      disableBodyScroll(refList);
+      disableBodyScroll(refList)
       setScrollable(true)
     }
   }, [inViewport]);
 
   const onWheel = (element) => {
-    const el = refList.current;
+    const el = refList.current
     if (el && scrollable) {
-      if (element.deltaY === 0) {return};
+      if (element.deltaY === 0) {return}
       el.scrollTo({
         left: el.scrollLeft + element.deltaY,
       });

@@ -19,26 +19,26 @@ function Slider({ refList, setScrollable }) {
     const right =
       Math.abs(
         e.target.scrollWidth - e.target.scrollLeft - e.target.clientWidth
-      ) < 2;
-    const left = Math.abs(e.target.scrollLeft) < 2;
+      ) < 2
+    const left = Math.abs(e.target.scrollLeft) < 2
 
     if (scrollToRight) {
       if (right) {
-        setLeftScroll(false);
+        setLeftScroll(false)
         setRightScroll(true);
-        enableBodyScroll(refList);
+        enableBodyScroll(refList)
         setScrollable(false)
       }
     }
     if (scrollToLeft) {
       if (left) {
-        setLeftScroll(true);
-        setRightScroll(false);
-        enableBodyScroll(refList);
+        setLeftScroll(true)
+        setRightScroll(false)
+        enableBodyScroll(refList)
         setScrollable(false)
       }
     }
-  };
+  }
 
   return (
     <section>
@@ -81,4 +81,4 @@ function Slider({ refList, setScrollable }) {
   );
 }
 
-export default Slider;
+export default Slider

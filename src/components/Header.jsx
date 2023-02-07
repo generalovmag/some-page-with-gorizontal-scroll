@@ -2,7 +2,7 @@ import styles from "../CSS/header/header.module.css";
 import logoHeader from "../img/header/logo-header.png";
 import logoHeaderMobile from "../img/header/logo-mobile.png";
 
-function Header(props) {
+function Header() {
   return (
     <header className={styles.container}>
       <div className="container">
@@ -38,4 +38,4 @@ function Header(props) {
   );
 }
 
-export default Header;
+export default Header
