@@ -1,0 +1,46 @@
+/*Шрифты*/
+
+@font-face {
+    font-family: "OrchideaProMedium";
+    src: url("./fonts/OrchideaProMedium/OrchideaProMedium.eot");
+    src: url("./fonts/OrchideaProMedium/OrchideaProMedium.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/OrchideaProMedium/OrchideaProMedium.woff") format("woff"),
+    url("./fonts/OrchideaProMedium/OrchideaProMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Manrope:wght@500&display=swap');
+
+body {
+    font-family: "Manrope", "Roboto Light";
+    font-size: 18px;
+    font-weight: 500;
+    color: #141414;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1, h2, h3, p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    padding: 0 20px;
+    max-width: 1460px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+

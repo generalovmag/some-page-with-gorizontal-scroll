@@ -1,0 +1,53 @@
+import styles from '../CSS/hero/hero.module.css';
+import imgThird from "../img/hero/julia-3.jpg";
+import imgFourth from "../img/hero/taisiia-4.jpg";
+
+function HeroSecond() {
+    return (
+        <section className={styles.section}>
+            <div className={styles.container}>
+                <h1 className={styles.title}>UT ALIQUIP EX EA COMMODO CONSEQUAT</h1>
+                <div className={styles.hero_container + ' flex'}>
+                    <div className={styles.hero_items + ' flex'}>
+                        <div className={styles.first_img_container + ' ' + styles.third_img_container}>
+                        <img src={imgThird}
+                             alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                             className={styles.third_img}/>
+                        </div>
+                        <div className={styles.text_block + ' flex'}>
+                            <h3 className={styles.hero_title}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </h3>
+                            <p className={styles.text}>
+                                Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            </p>
+                        </div>
+                    </div>
+                    <div className={styles.hero_items + ' flex'}>
+                        <div className={styles.text_block + ' flex'}>
+                            <h3 className={styles.hero_title}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </h3>
+                            <p className={styles.text}>
+                                Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            </p>
+                        </div>
+                        <div className={styles.second_img_container}>
+                            <img src={imgFourth}
+                                 alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                                 className={styles.second_img}/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default HeroSecond

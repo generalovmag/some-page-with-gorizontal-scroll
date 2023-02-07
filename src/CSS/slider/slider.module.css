@@ -1,0 +1,68 @@
+section {
+    margin-bottom: 160px;
+}
+
+.container {
+    margin: 0 0 0 13.6vw;
+}
+
+.title {
+    margin-bottom: 120px;
+
+    font-family: "OrchideaProMedium", "Roboto Light";
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.img_items {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.img_item:first-child {
+    margin-left: 15%;
+}
+
+.img_item:last-child {
+    margin-right: 17%;
+}
+
+.img_item {
+    display: flex;
+    flex: 0 0 auto;
+    /* overflow: hidden; */
+    width: 320px;
+    height: 489px;
+}
+
+.img_item:not(:first-child) {
+    margin-left: 40px;
+}
+
+@media (max-width: 700px) {
+    .title{
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        margin-bottom: 70px;
+    }
+
+    .container {
+        margin: 0 0 0 20px;
+    }
+
+    .img_item {
+        display: flex;
+        flex: 0 0 auto;
+        width: 225px;
+        height: 345px;
+    }
+
+    .img_item:first-child {
+        margin-left: 20px;
+    }
+}

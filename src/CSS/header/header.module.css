@@ -1,0 +1,36 @@
+.container {
+    background: linear-gradient(0deg, #464341 0%, #010101 100%);
+}
+
+.header {
+    padding: 34px 25px 31px 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.img {
+    font-size: 36px;
+}
+
+.number {
+    font-family: 'Manrope';
+    font-size: 24px;
+}
+
+.number_mobile {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .header {
+        margin-bottom: 75px;
+    }
+    .number {
+        display: none;
+    }
+
+    .number_mobile {
+        display: block;
+    }
+}
